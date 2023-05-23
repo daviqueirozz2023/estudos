@@ -1,0 +1,21 @@
+aula 7 part 1
+5+2  = 7   - soma
+5-2  = 3   - menos 
+5*2  = 10  - multiplicação
+5/2  = 2.5 - divisão
+5%2  = 1   - porcentagem
+5**2 = 25  - potência
+-------------------------------------
+ordem de Precedência
+() 'tudo em uma soma que estiver em parenteses será somado primeiro'
+** 'Logo em seguida vem as potências'
+* / % 'em seguida vem as somas'
++ - 'por ultimo vem soma e subitração'
+--------------------------------------------------------------------
+Simplificando
+n=n +4  n += 4
+n=n -5  n
+n=n *4
+n=n /2
+n=n **2
+n=n %5

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: aliceblue;
+        font: normal 14px Arial;
+
+    }
+</style>
+<body>
+    <h1>Qual o Seu Pais?</h1>
+    
+    De onde você é <input type="name" name="txtpais" id="txtpais">
+    <input type="button" value="confirmar" onclick="confirmar()">
+    <div id="res"></div>
+
+    <h1>Qual a sua idade?</h1>
+    <input type="number" name="nidade" id="nidade">
+    <input type="button" value="confirmar2" onclick="confirmar2()">
+    <div id="res2"></div>    
+
+    
+    <script>
+        
+    function confirmar() {
+
+        var pais = 'Brasil'
+        var txtpais = window.document.querySelector('input#txtpais')
+        var res = window.document.querySelector('div#res')
+        var resultado = (txtpais.value)
+        if(resultado == 'Brasil') {
+            
+            res.innerHTML = `Você é do ${pais}`
+        }else {
+            
+            res.innerHTML = `Você não é do ${pais}`
+            
+        }
+        
+        
+    }
+
+    function confirmar2() {
+        var idade = '18'
+        var nidade = window.document.querySelector('input#nidade')
+        var res2 = window.document.querySelector('div#res2')
+        var resultado2 = Number(nidade.value)
+        
+        if(resultado2 <= '18') {
+            
+            res2.innerHTML = `você é de menor`
+
+        }else {
+            res2.innerHTML = `você é de maior`
+        }
+    }
+    
+
+    </script>
+</body>
+</html>

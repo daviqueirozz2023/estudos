@@ -1,0 +1,15 @@
+.fundo{
+    text-align: center;
+    display: block;
+    
+
+}
+
+.fundo h1{
+    height: 2em;
+}
+
+.fundo button{
+    height: 2.5em;
+    width: 5.5em;
+}

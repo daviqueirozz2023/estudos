@@ -1,0 +1,7 @@
+aula 8 pt2 
+Precedência 
+1º vem - () ** / ...
+2º vem - > < >= <= != ...
+3º vem - !
+4º vem - &&
+5º vem - ||

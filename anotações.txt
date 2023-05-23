@@ -1,0 +1,12 @@
+Anotações:
+mudança de numero para String
+Número > String:
+
+String(n)
+n.toString: o 'n' seria o que vc quer transformar em 
+uma String 'numero ou var'
+
+${} 'o Nome dessa função é PlaceHolder'
+em algumas partes só funciona com a ``
+ex:     `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+result: 'O aluno Davi com 41 anos tirou a nota 5.5'

@@ -1,0 +1,119 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #000000;
+}
+p{
+    color: #888888;
+    padding: 5px 0;
+}
+.fundo{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Esconder o botão 'toggle' */
+
+#toggle{
+    position: absolute;
+    cursor: pointer;
+    left: -100%;
+    top: -100%;
+}
+#menu{
+    background: #181818;
+    color: #fff;
+    position: absolute;
+    margin: 0px auto;
+    top: 0px;
+    left: 9%;
+    width: 100%;
+    max-width: 800px;
+    height: 0px;
+    padding: 0px;
+    opacity: 0;
+    /*
+    -webkit-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    -moz-transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    transition: top 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    */
+    transition: height 2ms;
+    overflow: hidden;
+    box-sizing: border-box;
+    align-items: center;
+    display: block;
+}
+
+/* Seletor irmão adjacente + -> Seleciona apenas o próximo elemento
+da sequência (irmão do elemento anterior) */
+
+#toggle+label{
+    position: absolute;
+    cursor: pointer;
+    padding: 10px;
+    background: #2d2d2d;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    color: #ffffff;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 50px;
+    transition: all 300ms ease;
+    display: flex;
+
+}
+
+/* ação anterior do clique - btn abrir */
+
+#toggle+label::after{ content: "Relógio"; }
+
+/* Seletor de irmãos = Til 
+    ~ captura todos os elementos irmãos de um elemento que 
+    procede de um mesmo elemendo pai. 
+    se estiver checado, ou seja, quando clicar, sobre o menu.
+*/
+
+#toggle:checked~#menu{
+
+    top: 100px;
+    padding: 20px;
+    height: 250px;
+    
+    opacity: 1;
+    margin: 0 auto;
+
+}
+
+/* Transição suave para a container */
+
+#container{ transition: margin 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+    padding: 5em 3em;
+
+}
+#toggle:checked+label{
+    margin-top: 250px;
+    background: #888888;
+    
+}
+#toggle:checked+label::after{
+    content: "Fechar Relógio";
+}
+
+#toggle:checked~#container {
+
+    /*margin-top: 250px;*/
+
+}
+
+ /* Atribuir a cor para fechar quando o toggle estiver aberto */

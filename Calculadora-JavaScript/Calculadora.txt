@@ -1,0 +1,14 @@
+Exercício - Calculadora
+https://www.youtube.com/watch?v=42TShjXR0m0
+
+Resulmo: 
+Exercício desenvolvido em html css e javaScript
+feito com: 
+- 2 divs 
+- 1 tabela
+- 5 tr
+- 10 botões com funcão onclick()
+- dentro das tr's 4 td's cada
+criadas funcões'functions()' para inserir cada funçãos 
+nos botões.
+ 
