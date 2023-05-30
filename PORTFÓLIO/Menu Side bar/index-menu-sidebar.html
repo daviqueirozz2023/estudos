@@ -41,15 +41,15 @@
                 </li>
                 <ul class="menu-links">
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#" onclick="clickHome()">
                             <i class='bx bx-home-alt-2 icon' ></i>
-                            <span class="text nav-text">Dashboard</span>
+                            <span class="text nav-text Home">Home</span>
                         </a>
                     </li>
                     <li class="nav-link">
-                        <a href="#">
+                        <a href="#" onclick="clickTrabalhos()">
                             <i class='bx bx-bar-chart-alt-2 icon' ></i>
-                            <span class="text nav-text">Revenue</span>
+                            <span class="text nav-text Trabalhos">Trabalhos</span>
                         </a>
                     </li>
                     <li class="nav-link">
@@ -104,9 +104,15 @@
         </div>
     </nav>
 
-    <section class="home">
+    <section class="home" onclick="clickHome()">
 
-        <div class="text"></div>
+        <div class="text Home" style="display: none;"> > Home </div>
+
+    </section>
+
+    <section class="Trabalhos" onclick="clickTrabalhos()">
+
+        <div class="text Trabalhos" style="display: none;"> > Trabalhos </div>
 
     </section>
 

@@ -27,7 +27,7 @@
 body{
     height: 100vh;
     background: var(--boby-color);
-    transition: var(--tran-04);
+    transition: var(--tran-05);
 }
 
 body.dark{
@@ -56,6 +56,7 @@ body.dark{
         min-width: 60px;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
     
 
@@ -73,7 +74,7 @@ body.dark{
 }
 
 .sidebar.close{
-    width: 78px;
+    width: 85px;
 }
 
 /*======SideBar=====*/
@@ -95,7 +96,7 @@ body.dark{
     display: flex;
     align-items: center;
     justify-content: center;
-    min-width: 60px;
+    min-width: 55px;
     font-size: 20px;
 }
 
@@ -160,13 +161,14 @@ body.dark{
 }
 
 body.dark .sidebar header .toggle{
-    transform: rotate(180deg);
+    
     color: var(--text-color);
 }
 
 .sidebar .search-box{
     background: var(--primary-color-light);
     border-radius:  6px;
+    transition: var(--tran-05);
 }
 
 .search-box input{
@@ -175,7 +177,10 @@ body.dark .sidebar header .toggle{
     outline: none;
     border: none;
     border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
     background: var(--primary-color-light);
+    color: var(--text-color)
     
 }
 
@@ -257,9 +262,10 @@ body.dark i.moon{
     align-items: center;
     justify-content: center;
     height: 3%;
-    min-width: 60px;
+    min-width: 86px;
     cursor: pointer;
     border-radius: 6px;
+    transition: var(--tran-05);
 
     
 }
@@ -289,13 +295,30 @@ body.dark i.moon{
 body.dark .switch::before{
     left: 25px;
 }
-
+/*====== HOME ======*/
 .home{
     position: relative;
     height: 100vh;
-    left: 88px;
-    width: calc(100% - 88px);
-    background: red;
+    left: 250px;
+    width: calc(100% - 250px);
+    background: var(--boby-color);
+    transition: var(--tran-05);
+}
+
+.home .text{
+    display: block;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 8px 40px;
+}
+
+.home .text .Trabalhos{
+    display: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 8px 40px;
 }
 
 .sidebar.close ~ .home{
