@@ -407,7 +407,7 @@ body.dark .switch::before{
     width: 100%;
     max-width: 900px;
     height: auto;
-    border: 1px solid #3A3B3C;
+    border: 0px solid #3A3B3C;
 }
 
 .descricao p{
