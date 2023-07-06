@@ -313,8 +313,25 @@ body.dark .switch::before{
     padding: 8px 40px;
 }
 
-.home .text .Trabalhos{
+.home .textNone{
     display: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 8px 40px;
+}
+
+/*====== HOME ======*/
+/*====== Trabalhos ======*/
+ 
+.Trabalhos .text.Trabalhos{
+    display: none;
+    position: relative;
+    height: 100vh;
+    left: 85px;
+    width: calc(100% - 90px);
+    background: var(--boby-color);
+    transition: var(--tran-05);
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
@@ -325,4 +342,61 @@ body.dark .switch::before{
     left: 88px;
     width: calc(100% - 88px);
 }
+
+.Home .Sobre-mim{
+    width: calc(100% - 10px);
+    height: auto;
+    border: 1px solid #18191A;
+    border-radius: 13px;
+    display: block;
+    margin: 10px auto 0 auto;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: 'Poppins' ,Arial, sans-serif;
+}
+.Home .Sobre-mim span{
+    font-size: 22px;
+
+}
+.Home .Sobre-mim p{
+    padding: 10px 0 0 3%;
+    margin: 0px auto 0 auto;
+    display: block;
+}
+
+.Home .Sobre-mim-meio{
+    width: calc(100% - 10px);
+    height: auto;
+    border: 1px solid #18191A;
+    border-radius: 13px;
+    display: block;
+    margin: 10px auto 0 auto;
+    padding-top: 10px;
+    font-size: 16px;
+    font-family: 'Poppins' ,Arial, sans-serif;
+}
+
+.Home .Sobre-mim-meio .estagio{
+    padding: 10px 0 0 3%;
+    margin: 0px auto 0 auto;
+    display: block;
+}
+
+.Home .Sobre-mim-meio .experiencia{
+    padding: 10px 0 0 3%;
+    margin: 0px auto 0 auto;
+    display: block;
+    font-size: 22px;
+}
+
+.Home .Sobre-mim-meio .programador{
+    padding: 10px 0 0 3%;
+    margin: 0px auto 0 auto;
+    display: block;
+}
+
+.body.dark .Home .Sobre-mim-meio .programador a:hover{
+    color: var(--text-color);
+}
+/*====== Trabalhos ======*/
 

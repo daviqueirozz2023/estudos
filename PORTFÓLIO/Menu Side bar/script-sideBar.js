@@ -26,22 +26,35 @@ modeSwitch.addEventListener("click", () =>{
     }
 })
 
+function clickHome(){
+    var Home = window.document.querySelector('.textNone.Home')
+    var clickTrabalhos = window.document.querySelector('div.Trabalhos')
+    
+    Home.style.display = "block"
+    clickTrabalhos.style.display="none"
+
+}
+/*
 function clickHome() {
     var clickHome = window.document.querySelector('div.Home')
-    
     clickHome.style.display="block"
-    if(clickHome.style.display="block"){
-        clickHome.style.display="none"
+    
+    if(clickHome.classList.text("text")){
+        clickHome.innerText = "textNone"
+        
     }else{
-        clickHome.style.display="block"
+        
+        clickHome.innerText = "text"
+        //clickHome.style.display="block"
     }
     
 }
-
+*/
 function clickTrabalhos() {
+    var Home = window.document.querySelector('.textNone.Home')
     var clickTrabalhos = window.document.querySelector('div.Trabalhos')
     
-    
+    Home.style.display = "none"
     clickTrabalhos.style.display="block"
     
 }
