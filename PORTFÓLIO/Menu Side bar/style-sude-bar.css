@@ -409,6 +409,9 @@ body.dark .switch::before{
     height: auto;
     border: 0px solid #3A3B3C;
 }
+.descricao{
+    
+}
 
 .descricao p{
     font-size: 14px;
