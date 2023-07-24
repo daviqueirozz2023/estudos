@@ -15,9 +15,9 @@ const audio = new Audio ("/Jogo da Cobrinha JS/js/audio.mp3")
 
 const size = 30
 
-const snake = [
-    {x: 270, y: 240}
-]
+const initialPosition = {x: 270, y: 240}
+
+let snake = [initialPosition]
 
 const incrementScore = () => {
     //score.innerText = + score.innerText + 10 // Também funciona
@@ -169,7 +169,8 @@ const gameOver = () =>{
     direction = undefined
 
     menu.style.display = "flex"
-    finalScore.innerText - score
+    finalScore.innerText = score.innerText
+    canvas.style.filter = "blur(2px)"
 }
 
 const gameLoop = () => {
@@ -207,4 +208,12 @@ document.addEventListener("keydown", ({key}) => {
         direction = "up"
     }
    
+})
+
+buttonPlay.addEventListener("click", () => {
+    score.innerText = "00"
+    menu.style.display = "none"
+    canvas.style.filter = "none"
+
+    snake = [initialPosition]
 })
