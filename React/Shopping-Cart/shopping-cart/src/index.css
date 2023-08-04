@@ -6,3 +6,10 @@
   box-sizing: border-box;
   font-family: 'Lato', sans-serif;
 }
+body {
+  background-color: #ccc;
+}
+.container{
+  max-width: 1100px;
+  margin: 0 auto;
+}
