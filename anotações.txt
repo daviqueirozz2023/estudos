@@ -10,3 +10,11 @@ ${} 'o Nome dessa função é PlaceHolder'
 em algumas partes só funciona com a ``
 ex:     `O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
 result: 'O aluno Davi com 41 anos tirou a nota 5.5'
+
+mandar meus trabalhos para o GitHub:
+git status - para levantar os arquivos novos e modificados durante o processo de desenvolvimento
+git add .  - este comando organiza e adiciona todos os arquivos que esta na pasta main antes de subir.
+git commit -m - insere um resumo ou um assunto, caso o desenvolvedor queira colocar na hora que 
+		for fazer upload dos arquivos no GitHub.
+
+git push -u origin main - pega todos os arquivos organizados e sobe 'faz o upLoad' para o github.
